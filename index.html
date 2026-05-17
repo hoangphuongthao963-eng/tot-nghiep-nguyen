@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Graduation - Phương Thảo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="decorations" id="decorations">
+        <div class="corner top-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg></div>
+        <div class="corner top-right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg></div>
+        <div class="corner bottom-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg></div>
+        <div class="corner bottom-right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg></div>
+    </div>
+    <div class="container">
+        <div class="envelope-wrapper" id="envelope">
+            <div class="envelope">
+                <!-- Flap -->
+                <div class="flap"></div>
+
+                <!-- Front labels -->
+                <div class="envelope-front">
+                    <div class="labels">
+                        <div class="to">
+                            <span class="label-tag">To:</span>
+                            <span class="name">Khôi Nguyên</span>
+                        </div>
+                    </div>
+                    <div class="wax-seal"></div>
+                </div>
+
+                <!-- The Letter inside -->
+                <div class="letter" id="letter">
+                    <div class="letter-content">
+                        <h1 class="letter-title">Dear Khôi Nguyên,</h1>
+                        <div class="letter-text">
+                            <p style="margin-bottom: 12px;">Gửi Khôi Nguyên.
+                                Cảm ơn bạn đã giúp quãng đời sinh viên của mình thêm rực rỡ!</p>
+
+                            <p style="margin-bottom: 15px; font-weight: bold; color: var(--primary-green);">Trân trọng
+                                mời bạn đến tham dự và lưu giữ lại những kỷ niệm đẹp trong buổi chụp ảnh tốt
+                                nghiệp của mình!</p>
+
+                            <ul style="list-style-type: none; padding: 0; line-height: 1.6;">
+                                <li><strong>Thời gian:</strong> 10:00 - 11:30, ngày 24 tháng 5 năm 2026</li>
+                                <li><strong>Địa điểm:</strong> Học viện Ngân hàng, số 12 Chùa Bộc, Kim Liên, Hà Nội
+                                </li>
+                                <li><strong>Liên hệ:</strong> 0819119198</li>
+                            </ul>
+                            <div class="map-action">
+                                <button id="openMapBtn" class="map-btn">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    Hướng dẫn gửi xe
+                                </button>
+                            </div>
+                        </div>
+                        <div class="letter-footer">
+                            <p>See yaaa,</p>
+                            <p class="signature">Phương Thảo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hint">Nhấp vào thư để mở</div>
+    </div>
+
+    <!-- Map Modal -->
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">📍 Gợi ý điểm gửi xe</h2>
+            <div class="map-options">
+                <div class="map-item">
+                    <h3>Học viện Ngân hàng</h3>
+                    <p>Gửi xe trong khuôn viên trường</p>
+                    <a href="https://www.google.com/maps/search/Học+viện+Ngân+hàng" target="_blank" class="gmap-link">Mở
+                        Google Maps</a>
+                </div>
+                <div class="map-item">
+                    <h3>Vincom Phạm Ngọc Thạch</h3>
+                    <p>Cách trường khoảng 500m</p>
+                    <a href="https://www.google.com/maps/search/Vincom+Phạm+Ngọc+Thạch" target="_blank"
+                        class="gmap-link">Mở Google Maps</a>
+                </div>
+                <div class="map-item">
+                    <h3>Đại học Thủy Lợi</h3>
+                    <p>Cách trường khoảng 600m</p>
+                    <a href="https://www.google.com/maps/search/Đại+học+Thủy+Lợi" target="_blank" class="gmap-link">Mở
+                        Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
